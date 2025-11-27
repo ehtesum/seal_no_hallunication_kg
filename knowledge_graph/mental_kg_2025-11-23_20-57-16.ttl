@@ -1,0 +1,66 @@
+@prefix mh: <http://example.org/mentalhealth#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+mh:Anxiety a mh:Condition ;
+    mh:associated_with mh:Restlessness ,
+                       mh:MuscleTension ,
+                       mh:Worry ;
+    mh:label "Anxiety" .
+
+mh:Restlessness a mh:Symptom ;
+    mh:label "restlessness" .
+
+mh:MuscleTension a mh:Symptom ;
+    mh:label "muscle tension" .
+
+mh:Worry a mh:Symptom ;
+    mh:label "worry" .
+
+
+mh:Depression a mh:Condition ;
+    mh:associated_with mh:LowMood ,
+                       mh:LossOfInterest ,
+                       mh:Fatigue ;
+    mh:label "Depression" .
+
+mh:LowMood a mh:Symptom ;
+    mh:label "low mood" .
+
+mh:LossOfInterest a mh:Symptom ;
+    mh:label "loss of interest" .
+
+mh:Fatigue a mh:Symptom ;
+    mh:label "fatigue" .
+
+
+mh:OCD a mh:Condition ;
+    mh:associated_with mh:IntrusiveThoughts ,
+                       mh:CompulsiveBehaviors ,
+                       mh:Rituals ;
+    mh:label "OCD" .
+
+mh:IntrusiveThoughts a mh:Symptom ;
+    mh:label "intrusive thoughts" .
+
+mh:CompulsiveBehaviors a mh:Symptom ;
+    mh:label "compulsive behaviors" .
+
+mh:Rituals a mh:Symptom ;
+    mh:label "rituals" .
+
+
+mh:Schizophrenia a mh:Condition ;
+    mh:associated_with mh:Hallucinations ,
+                       mh:Delusions ,
+                       mh:DisorganizedThinking ;
+    mh:label "Schizophrenia" .
+
+mh:Hallucinations a mh:Symptom ;
+    mh:label "hallucinations" .
+
+mh:Delusions a mh:Symptom ;
+    mh:label "delusions" .
+
+mh:DisorganizedThinking a mh:Symptom ;
+    mh:label "disorganized thinking" .
+
